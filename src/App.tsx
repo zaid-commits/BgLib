@@ -1,9 +1,9 @@
-import HeroSection from './components/HeroSection'
-import './App.css'
+import HomePage from './components/HomePage'
+
 function App() {
   return (
     <div>
-      <HeroSection />
+      <HomePage />
     </div>
   )
 }
