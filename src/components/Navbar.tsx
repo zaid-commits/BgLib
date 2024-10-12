@@ -46,8 +46,8 @@ export const Navbar = () => {
                                 <Button variant="outline">Resources</Button>
                             </DropdownMenuTrigger>
                             <DropdownMenuContent>
-                                <DropdownMenuItem>Documentation</DropdownMenuItem>
-                                <DropdownMenuItem>Tutorials</DropdownMenuItem>
+                                <DropdownMenuItem> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient">Documentation</a></DropdownMenuItem>
+                                {/* <DropdownMenuItem>Tutorials</DropdownMenuItem> */}
                                 <DropdownMenuItem> <a href="https://community.impic.tech">Community</a></DropdownMenuItem>
                             </DropdownMenuContent>
                         </DropdownMenu>
