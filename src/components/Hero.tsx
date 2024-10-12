@@ -1,4 +1,3 @@
-import Button from './Button'
 import { HeroHighlightDemo } from './HeroHighlightDemo'
 
 function Hero() {
