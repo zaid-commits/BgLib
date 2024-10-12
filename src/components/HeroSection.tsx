@@ -6,7 +6,7 @@ export const HeroSection = () => (
       Background Library Crafted Just for You!
     </h1>
     <p className="text-gray-600 max-w-2xl mx-auto mb-10">
-      Ready-to-use, open source background gradients for your next project. Just copy the CSS code and paste it in your project. It's that simple! 
+      Open source background library inspired by <a href="https://bg.ibelick.com" className="text-blue-500">bg.ibelick,</a> for your next project. Just copy the CSS code and paste it in your project. It's that simple!
     </p>
     <div className="flex flex-col sm:flex-row gap-4 justify-center">
     <Button variant="default" className="bg-black text-white hover:bg-gray-800">
