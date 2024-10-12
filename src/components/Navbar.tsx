@@ -26,7 +26,7 @@ export const Navbar = () => {
                 <div className="flex justify-between items-center py-4 md:justify-start md:space-x-10">
                     <div className="flex justify-start lg:w-0 lg:flex-1">
                         <a href="#" className="text-2xl font-bold text-black">
-                            BG<span className="text-blue-600">Lib</span>
+                            Bg<span className="text-blue-600">Lib</span>
                         </a>
                     </div>
                     <div className="-mr-2 -my-2 md:hidden">
