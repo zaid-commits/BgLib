@@ -26,8 +26,7 @@ export function HeroHighlightDemo() {
         }}
         className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-white dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
       >
-        An Amazing Backrgound Library, Crafted
-        is a{" "}
+        An Amazing Background Library, Crafted{" "}
         <Highlight className="text-black dark:text-white">
           Just for you!
         </Highlight>
