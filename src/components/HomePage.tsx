@@ -6,37 +6,58 @@ import { BackgroundCard } from './BackgroundCard'
 import { Footer } from './Footer'
 
 const gradients = [
-  {
-    title: "Simple Gradient",
-    code: `background: linear-gradient(to right, #f6d365 0%, #fda085 100%);`,
-    gradient: "linear-gradient(to right, #f6d365 0%, #fda085 100%)"
-  },
-  {
-    title: "Radial Gradient",
-    code: `background: radial-gradient(circle, #f6d365 0%, #fda085 100%);`,
-    gradient: "radial-gradient(circle, #f6d365 0%, #fda085 100%)"
-  },
-  {
-    title: "Diagonal Gradient",
-    code: `background: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);`,
-    gradient: "linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%)"
-  },
-  {
-    title: "Soft Blue Gradient",
-    code: `background: linear-gradient(to right, #E0EAFC 0%, #CFDEF3 100%);`,
-    gradient: "linear-gradient(to right, #E0EAFC 0%, #CFDEF3 100%)"
-  },
-  {
-    title: "Sunset Gradient",
-    code: `background: linear-gradient(to right, #FF512F 0%, #F09819 100%);`,
-    gradient: "linear-gradient(to right, #FF512F 0%, #F09819 100%)"
-  },
-  {
-    title: "Cool Mint Gradient",
-    code: `background: linear-gradient(to right, #2AFADF 0%, #4C83FF 100%);`,
-    gradient: "linear-gradient(to right, #2AFADF 0%, #4C83FF 100%)"
-  },
-]
+    {
+        title: "Morning Mist",
+        code: `background: linear-gradient(to right, #3E5151 0%, #DECBA4 100%);`,
+        gradient: "linear-gradient(to right, #3E5151 0%, #DECBA4 100%)"
+      },
+      {
+        title: "Sunset Blaze",
+        code: `background: linear-gradient(to right, #FF416C 0%, #FF4B2B 100%);`,
+        gradient: "linear-gradient(to right, #FF416C 0%, #FF4B2B 100%)"
+      },
+      {
+        title: "Ocean Breeze",
+        code: `background: linear-gradient(to right, #4CA1AF 0%, #C4E0E5 100%);`,
+        gradient: "linear-gradient(to right, #4CA1AF 0%, #C4E0E5 100%)"
+      },
+      {
+        title: "Lush Meadow",
+        code: `background: linear-gradient(to right, #56AB2F 0%, #A8E063 100%);`,
+        gradient: "linear-gradient(to right, #56AB2F 0%, #A8E063 100%)"
+      },
+      {
+        title: "Purple Haze",
+        code: `background: linear-gradient(to right, #8E2DE2 0%, #4A00E0 100%);`,
+        gradient: "linear-gradient(to right, #8E2DE2 0%, #4A00E0 100%)"
+      },
+      {
+        title: "Golden Hour",
+        code: `background: linear-gradient(to right, #FDC830 0%, #F37335 100%);`,
+        gradient: "linear-gradient(to right, #FDC830 0%, #F37335 100%)"
+      },
+      {
+        title: "Frosty Mint",
+        code: `background: linear-gradient(to right, #00B4DB 0%, #0083B0 100%);`,
+        gradient: "linear-gradient(to right, #00B4DB 0%, #0083B0 100%)"
+      },
+      {
+        title: "Cherry Blossom",
+        code: `background: linear-gradient(to right, #FFC3A0 0%, #FFAFBD 100%);`,
+        gradient: "linear-gradient(to right, #FFC3A0 0%, #FFAFBD 100%)"
+      },
+      {
+        title: "Twilight Sky",
+        code: `background: linear-gradient(to right, #0F2027 0%, #203A43 50%, #2C5364 100%);`,
+        gradient: "linear-gradient(to right, #0F2027 0%, #203A43 50%, #2C5364 100%)"
+      },
+      {
+        title: "Autumn Leaves",
+        code: `background: linear-gradient(to right, #DAD299 0%, #B0DAB9 100%);`,
+        gradient: "linear-gradient(to right, #DAD299 0%, #B0DAB9 100%)"
+      }
+  ];
+  
 
 export default function HomePage() {
   const [backgroundGradient, setBackgroundGradient] = useState('')
@@ -47,7 +68,8 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen flex flex-col transition-all duration-300" style={{ background: backgroundGradient }}>
-      <div className={`flex-grow ${backgroundGradient ? 'bg-white bg-opacity-90' : 'bg-white'}`}>
+        {/* change the opacity to handle the color change  */}
+      <div className={`flex-grow ${backgroundGradient ? 'bg-white bg-opacity-0' : 'bg-white'}`}>
         <Navbar />
         <main>
           <HeroSection />

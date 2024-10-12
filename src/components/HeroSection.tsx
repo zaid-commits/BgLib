@@ -6,8 +6,7 @@ export const HeroSection = () => (
       Background Library Crafted Just for You!
     </h1>
     <p className="text-gray-600 max-w-2xl mx-auto mb-10">
-      Ready-to-use, simply copy and paste into your next project. All snippets
-      crafted with Tailwind CSS and Vanilla CSS for easy integration.
+      Ready-to-use, open source background gradients for your next project.
     </p>
     <div className="flex flex-col sm:flex-row gap-4 justify-center">
       <Button variant="default" className="bg-black text-white hover:bg-gray-800">
