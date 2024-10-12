@@ -10,7 +10,7 @@ export const HeroSection = () => (
     </p>
     <div className="flex flex-col sm:flex-row gap-4 justify-center">
     <Button variant="default" className="bg-black text-white hover:bg-gray-800">
-      Star on Github ⭐ 
+      <a href="https://github.com/zaid-commits/bgLib">Star on Github ⭐</a> 
     </Button>
       <Button variant="outline" className="text-black border-black hover:bg-gray-100">
         Reset background
