@@ -6,12 +6,12 @@ export const HeroSection = () => (
       Background Library Crafted Just for You!
     </h1>
     <p className="text-gray-600 max-w-2xl mx-auto mb-10">
-      Ready-to-use, open source background gradients for your next project.
+      Ready-to-use, open source background gradients for your next project. Just copy the CSS code and paste it in your project. It's that simple! 
     </p>
     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-      <Button variant="default" className="bg-black text-white hover:bg-gray-800">
-        Go to GitHub
-      </Button>
+    <Button variant="default" className="bg-black text-white hover:bg-gray-800">
+      Star on Github ⭐ 
+    </Button>
       <Button variant="outline" className="text-black border-black hover:bg-gray-100">
         Reset background
       </Button>
