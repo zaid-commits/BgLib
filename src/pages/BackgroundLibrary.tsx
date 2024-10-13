@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { HeroSection } from "@/components/HeroSection";
 import { SearchBar } from "@/components/SearchBar";
 import { BackgroundCard } from "@/components/BackgroundCard";
-import { Footer } from "@/components/Footer";
 import { AcceptCookies } from "@/components/AcceptCookies";
 import { Button } from "@/components/ui/button";
 import '../App.css'
+import { Footer } from "@/components/Footer";
 const gradients = [
   {
     title: "Blue Arch",
@@ -91,10 +91,13 @@ export default function HomePage() {
                 />
               ))}
             </div>
+            <div className="py-6">
+      <Footer />
+
+            </div>
           </section>
         </main>
       </div>
-      <Footer />
       <AcceptCookies />
     </div>
   );
