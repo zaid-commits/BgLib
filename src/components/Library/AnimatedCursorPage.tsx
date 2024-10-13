@@ -1,7 +1,7 @@
 import React from 'react';
 import { AnimatedCursor } from './AnimatedCursor';
 import { CodeBlock } from "@/components/ui/code-block";
-import '../../App.css'
+import '../../index.css'
 const AnimatedCursorPage: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto py-10">
