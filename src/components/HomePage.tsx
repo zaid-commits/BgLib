@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Navbar } from "./Navbar";
+import Navbar from "./Navbar";
 import { HeroSection } from "./HeroSection";
 import { SearchBar } from "./SearchBar";
 import { BackgroundCard } from "./BackgroundCard";
