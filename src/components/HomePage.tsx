@@ -4,6 +4,7 @@ import { HeroSection } from "./HeroSection";
 import { SearchBar } from "./SearchBar";
 import { BackgroundCard } from "./BackgroundCard";
 import { Footer } from "./Footer";
+import { AcceptCookies } from "./AcceptCookies";
 import "../App.css";
 
 const gradients = [
@@ -86,6 +87,7 @@ export default function HomePage() {
         </main>
       </div>
       <Footer />
+      <AcceptCookies />
     </div>
   );
 }
