@@ -48,6 +48,10 @@ export default function HomePage() {
     setBackgroundGradient(gradient);
   };
 
+  const handleResetBackground = () => {
+    setBackgroundGradient("");
+  };
+
   return (
     <div
       className="hero-section min-h-screen flex flex-col transition-all duration-300"
@@ -61,7 +65,7 @@ export default function HomePage() {
       >
         <Navbar />
         <main>
-          <HeroSection />
+          <HeroSection onResetBackground={handleResetBackground} />
           <section className="py-20 px-4">
             <h2 className="text-3xl font-bold text-center mb-12">
               Explore Backgrounds
