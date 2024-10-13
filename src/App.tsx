@@ -9,6 +9,7 @@ import 'prismjs/themes/prism-tomorrow.css';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
 import BackgroundLibrary from './pages/BackgroundLibrary';
 import GlassmorphismCardPage from './components/Library/GlassmorphismCardPage';
+import AnimatedCursorPage from './components/Library/AnimatedCursorPage';
 function App() {
   return (
     <Router>
@@ -22,6 +23,7 @@ function App() {
             <Route path="forms" element={<FormsPage />} />
             <Route path="cards" element={<CardsPage />} />
             <Route path="glassmorphism-card" element={<GlassmorphismCardPage />} />
+            <Route path="animated-cursor" element={<AnimatedCursorPage />} />
           </Route>
           <Route path="*" element={<Navigate to="/" replace />} />
           

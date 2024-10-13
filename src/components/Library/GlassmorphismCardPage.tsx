@@ -1,7 +1,7 @@
-import React from 'react';
-import { GlassmorphismCard } from './GlassmorphismCard.tsx';
+import React from "react";
+import { GlassmorphismCard } from "./GlassmorphismCard.tsx";
 import { CodeBlock } from "@/components/ui/code-block";
-import { FiStar, FiHeart, FiAward } from 'react-icons/fi';
+import { FiStar, FiHeart, FiAward } from "react-icons/fi";
 
 const GlassmorphismCardPage: React.FC = () => {
   return (
@@ -85,8 +85,9 @@ function MyComponent() {
       <div>
         <h2 className="text-2xl font-semibold mb-4">Customization</h2>
         <p className="mb-4">
-          The GlassmorphismCard component can be customized by modifying the CSS classes. 
-          You can adjust the background opacity, blur effect, and colors to match your design needs.
+          The GlassmorphismCard component can be customized by modifying the CSS
+          classes. You can adjust the background opacity, blur effect, and
+          colors to match your design needs.
         </p>
         <CodeBlock
           language="tsx"

@@ -25,12 +25,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onResetBackground }) =
   }
 
   return (
-    <section ref={sectionRef} className="py-20 px-4 text-center">
+    <section ref={sectionRef} className="py-20 px-4 text-center bg-gradient-to-r from-blue-500 to-purple-600 text-white">
       <h1 className="text-4xl sm:text-5xl md:text-6xl mt-14 font-bold mb-6 max-w-4xl mx-auto">
         Background Library Crafted Just for You!
       </h1>
-      <p className="text-gray-600 max-w-2xl mx-auto mb-10">
-        Open source background library inspired by <a href="https://bg.ibelick.com" className="text-blue-500">bg.ibelick,</a> for your next project. Just copy the CSS code and paste it in your project. It's that simple!
+      <p className="text-gray-200 max-w-2xl mx-auto mb-10">
+        Open source background library inspired by <a href="https://bg.ibelick.com" className="text-yellow-300 underline">bg.ibelick,</a> for your next project. Just copy the CSS code and paste it in your project. It's that simple!
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
         <Button variant="default" className="bg-black text-white hover:bg-gray-800">
@@ -44,13 +44,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onResetBackground }) =
           Reset background
         </Button>
       </div>
-      <Card className="max-w-md mx-auto">
+      <Card className="max-w-md mx-auto bg-white shadow-lg">
         <CardContent className="flex items-center p-4">
           <div className="flex-grow mr-2 bg-gray-100 rounded-md p-2 text-left font-mono text-sm font-bold">
             npm install bg-lib
           </div>
           <Button onClick={handleCopy} variant="outline" size="icon">
-            {copied ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
+            {copied ? <Check className="h-4 w-4 text-green-500" /> : <Copy className="h-4 w-4" />}
           </Button>
         </CardContent>
       </Card>

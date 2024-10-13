@@ -16,7 +16,7 @@ export const GlassmorphismCard: React.FC<GlassmorphismCardProps> = ({
 }) => {
   return (
     <motion.div
-      className={`bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg ${className}`}
+      className={`bg-black bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg ${className}`}
       whileHover={{ scale: 1.05, rotateY: 5 }}
       transition={{ type: 'spring', stiffness: 300 }}
     >
