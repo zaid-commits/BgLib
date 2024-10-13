@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Twitter, Github, Menu, X } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import {
@@ -11,6 +11,7 @@ import {
 export const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const navRef = useRef<HTMLElement>(null);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -20,8 +21,20 @@ export const Navbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    useEffect(() => {
+        if (navRef.current) {
+            navRef.current.style.transform = 'translateY(-100%)';
+            navRef.current.style.transition = 'transform 1s ease-in-out';
+            setTimeout(() => {
+                if (navRef.current) {
+                    navRef.current.style.transform = 'translateY(0)';
+                }
+            }, 100);
+        }
+    }, []);
+
     return (
-        <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
+        <nav ref={navRef} className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center py-4 md:justify-start md:space-x-10">
                     <div className="flex justify-start lg:w-0 lg:flex-1">

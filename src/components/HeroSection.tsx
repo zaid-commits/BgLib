@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Copy, Check } from 'lucide-react'
+import gsap from 'gsap'
 
 interface HeroSectionProps {
   onResetBackground: () => void;
@@ -9,6 +10,13 @@ interface HeroSectionProps {
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ onResetBackground }) => {
   const [copied, setCopied] = useState(false)
+  const sectionRef = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    if (sectionRef.current) {
+      gsap.fromTo(sectionRef.current, { opacity: 0 }, { opacity: 1, duration: 1 })
+    }
+  }, [])
 
   const handleCopy = () => {
     navigator.clipboard.writeText('npm install bg-lib')
@@ -17,7 +25,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onResetBackground }) =
   }
 
   return (
-    <section className="py-20 px-4 text-center">
+    <section ref={sectionRef} className="py-20 px-4 text-center">
       <h1 className="text-4xl sm:text-5xl md:text-6xl mt-14 font-bold mb-6 max-w-4xl mx-auto">
         Background Library Crafted Just for You!
       </h1>
