@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Navbar from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
 import { SearchBar } from "@/components/SearchBar";
 import { BackgroundCard } from "@/components/BackgroundCard";
@@ -70,7 +69,7 @@ export default function HomePage() {
           backgroundGradient ? "bg-white bg-opacity-0" : "bg-white"
         }`}
       >
-        <Navbar />
+      
         <main>
           <HeroSection onResetBackground={handleResetBackground} />
           <section className="py-8 px-4">

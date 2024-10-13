@@ -1,38 +1,30 @@
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import './App.css';
-import { AcceptCookies } from './components/AcceptCookies';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import MainLayout from './components/MainLayout';
+import BackgroundLibrary from './pages/BackgroundLibrary';
 import ComponentLibrary from './pages/ComponentLibrary';
 import ButtonsPage from '@/components/Library/ButtonsPage';
 import FormsPage from '@/components/Library/FormsPage';
 import CardsPage from '@/components/Library/CardsPage';
 import 'prismjs/themes/prism-tomorrow.css';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
-import BackgroundLibrary from './pages/BackgroundLibrary';
-import GlassmorphismCardPage from './components/Library/GlassmorphismCardPage';
-import AnimatedCursorPage from './components/Library/AnimatedCursorPage';
+
 function App() {
   return (
     <Router>
-      <div>
+      <MainLayout>
         <Routes>
           <Route path="/" element={<BackgroundLibrary />} />
           <Route path="/backgrounds" element={<BackgroundLibrary />} />
           <Route path="/components" element={<ComponentLibrary />}>
-            <Route index element={<Navigate to="buttons" replace />} />
+            <Route index element={<ButtonsPage />} />
             <Route path="buttons" element={<ButtonsPage />} />
             <Route path="forms" element={<FormsPage />} />
             <Route path="cards" element={<CardsPage />} />
-            <Route path="glassmorphism-card" element={<GlassmorphismCardPage />} />
-            <Route path="animated-cursor" element={<AnimatedCursorPage />} />
           </Route>
-          <Route path="*" element={<Navigate to="/" replace />} />
-          
         </Routes>
-        <AcceptCookies />
-      </div>
+      </MainLayout>
     </Router>
   );
 }
-
 
 export default App;

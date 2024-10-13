@@ -13,8 +13,8 @@ const Navbar: React.FC = () => {
 
   const menuItems = [
     { name: 'Home', path: '/' },
-    { name: 'Components', path: '/components' },
     { name: 'Backgrounds', path: '/backgrounds' },
+    { name: 'Components', path: '/components' },
     { name: 'About', path: '/about' },
   ];
 
@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0">
-              <img className="h-8 w-auto" src="/logo.svg" alt="Logo" />
+              <img className="h-8 w-auto" src="/logo-wbg.png" alt="Logo" />
             </Link>
             <div className="hidden md:block ml-10">
               <div className="flex space-x-4">

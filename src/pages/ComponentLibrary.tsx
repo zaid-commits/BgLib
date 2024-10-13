@@ -9,8 +9,6 @@ const ComponentLibrary: React.FC = () => {
     { path: "buttons", label: "Buttons" },
     { path: "forms", label: "Forms" },
     { path: "cards", label: "Cards" },
-    { path: "glassmorphism-card", label: "Glassmorphism Card" },
-    { path: "animated-cursor", label: "Animated Cursor" },
   ];
 
   return (
