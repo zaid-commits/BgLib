@@ -3,7 +3,8 @@ import { Navbar } from "./Navbar";
 import { HeroSection } from "./HeroSection";
 import { SearchBar } from "./SearchBar";
 import { BackgroundCard } from "./BackgroundCard";
-import { Footer } from "./Footer";
+import { Footer } from "./Footer"
+import "../App.css";
 
 const gradients = [
   {
@@ -69,7 +70,7 @@ export default function HomePage() {
 
   return (
     <div
-      className="min-h-screen flex flex-col transition-all duration-300"
+      className="hero-section min-h-screen flex flex-col transition-all duration-300"
       style={{ background: backgroundGradient }}
     >
       {/* change the opacity to handle the color change  */}

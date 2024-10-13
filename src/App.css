@@ -4,3 +4,7 @@ body{
     font-family: Inter;
     font-weight: 500;
 }
+.hero-section{
+    height: 100vh;
+    width: 100vw;
+}
