@@ -1,7 +1,9 @@
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MainLayout from './components/MainLayout';
 import BackgroundLibrary from './pages/BackgroundLibrary';
 import ComponentLibrary from './pages/ComponentLibrary';
+import AboutPage from './pages/AboutPage';  // Import the new AboutPage
 import ButtonsPage from '@/components/Library/ButtonsPage';
 import FormsPage from '@/components/Library/FormsPage';
 import CardsPage from '@/components/Library/CardsPage';
@@ -21,6 +23,7 @@ function App() {
             <Route path="forms" element={<FormsPage />} />
             <Route path="cards" element={<CardsPage />} />
           </Route>
+          <Route path="/about" element={<AboutPage />} />  {/* Add this line */}
         </Routes>
       </MainLayout>
     </Router>
