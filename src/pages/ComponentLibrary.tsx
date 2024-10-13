@@ -7,8 +7,8 @@ const ComponentLibrary: React.FC = () => {
 
   const navItems = [
     { path: "buttons", label: "Buttons" },
+    { path: "forms", label: "Forms" },
     { path: "cards", label: "Cards" },
-    { path: "inputs", label: "Inputs" },
   ];
 
   return (

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import './App.css';
 import { AcceptCookies } from './components/AcceptCookies';
 import ComponentLibrary from './pages/ComponentLibrary';
@@ -17,11 +17,12 @@ function App() {
           <Route path="/" element={<BackgroundLibrary />} />
           <Route path="/backgrounds" element={<BackgroundLibrary />} />
           <Route path="/components" element={<ComponentLibrary />}>
-            {/* <Route index element={<ComponentHome />} /> */}
+            <Route index element={<Navigate to="buttons" replace />} />
             <Route path="buttons" element={<ButtonsPage />} />
             <Route path="forms" element={<FormsPage />} />
             <Route path="cards" element={<CardsPage />} />
           </Route>
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         <AcceptCookies />
       </div>
