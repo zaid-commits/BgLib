@@ -9,6 +9,7 @@ const ComponentLibrary: React.FC = () => {
     { path: "buttons", label: "Buttons" },
     { path: "forms", label: "Forms" },
     { path: "cards", label: "Cards" },
+    { path: "parallax-scroll", label: "Parallax Scroll" },
   ];
 
   return (
