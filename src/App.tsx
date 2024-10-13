@@ -23,6 +23,7 @@ function App() {
             <Route path="cards" element={<CardsPage />} />
           </Route>
           <Route path="*" element={<Navigate to="/" replace />} />
+          
         </Routes>
         <AcceptCookies />
       </div>
