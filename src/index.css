@@ -64,3 +64,16 @@
     @apply bg-background text-foreground;
   }
 }
+
+pre[class*="language-"] {
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  background: transparent;
+}
