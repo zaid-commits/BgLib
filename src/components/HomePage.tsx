@@ -30,6 +30,12 @@ const gradients = [
     gradient: "radial-gradient(circle, #ffffff 0%, #000000 100%)",
   },
   {
+    title: "Dreamy Radial Sunset",
+    code: `background: radial-gradient(ellipse 80% 80% at 50% -20%, rgba(120, 119, 198, 0.5), rgba(255, 255, 255, 0)), #1F2937;`,
+    gradient: "radial-gradient(ellipse 80% 80% at 50% -20%, rgba(120, 119, 198, 0.5), rgba(255, 255, 255, 0)), #1F2937"
+  }
+,    
+  {
     title: "Wavy Lines",
     code: `background-color: #ffffff;
 background-image: repeating-linear-gradient(45deg, #f5f5f5, #f5f5f5 10px, #ffffff 10px, #ffffff 20px);`,
