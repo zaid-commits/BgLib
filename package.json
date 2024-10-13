@@ -22,11 +22,14 @@
     "clsx": "^2.1.1",
     "framer-motion": "^11.11.8",
     "gsap": "^3.12.5",
+    "highlight.js": "^11.10.0",
     "lucide-react": "^0.452.0",
     "mini-svg-data-uri": "^1.4.4",
     "next": "^14.2.15",
+    "prismjs": "^1.29.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-highlight": "^0.15.0",
     "react-router-dom": "^6.27.0",
     "tailwind-merge": "^2.5.3",
     "tailwindcss-animate": "^1.0.7"
@@ -34,6 +37,7 @@
   "devDependencies": {
     "@eslint/js": "^9.11.1",
     "@types/node": "^22.7.5",
+    "@types/prismjs": "^1.26.4",
     "@types/react": "^18.3.10",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.2",
