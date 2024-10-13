@@ -7,8 +7,7 @@ import { BackgroundCard } from "@/components/BackgroundCard";
 import { Footer } from "@/components/Footer";
 import { AcceptCookies } from "@/components/AcceptCookies";
 import { Button } from "@/components/ui/button";
-import "../App.css";
-
+import '../App.css'
 const gradients = [
   {
     title: "Blue Arch",

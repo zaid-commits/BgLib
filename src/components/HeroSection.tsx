@@ -25,12 +25,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onResetBackground }) =
   }
 
   return (
-    <section ref={sectionRef} className="py-20 px-4 text-center bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+    <section ref={sectionRef} className="py-20 px-4 text-center">
       <h1 className="text-4xl sm:text-5xl md:text-6xl mt-14 font-bold mb-6 max-w-4xl mx-auto">
         Background Library Crafted Just for You!
       </h1>
-      <p className="text-gray-200 max-w-2xl mx-auto mb-10">
-        Open source background library inspired by <a href="https://bg.ibelick.com" className="text-yellow-300 underline">bg.ibelick,</a> for your next project. Just copy the CSS code and paste it in your project. It's that simple!
+      <p className="text-zinc-400 max-w-2xl mx-auto mb-10">
+        Open source background library inspired by <a href="https://bg.ibelick.com" className="text-blue-500 underline">bg.ibelick,</a> for your next project. Just copy the CSS code and paste it in your project. It's that simple!
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
         <Button variant="default" className="bg-black text-white hover:bg-gray-800">
