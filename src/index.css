@@ -77,3 +77,19 @@ pre[class*="language-"] {
 .style .token.string {
   background: transparent;
 }
+body {
+  font-family: 'Inter', sans-serif;
+  @apply bg-white text-gray-900;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-semibold;
+}
+
+pre {
+  @apply p-4 rounded-lg bg-gray-100 overflow-x-auto;
+}
+
+code {
+  @apply font-mono text-sm;
+}
