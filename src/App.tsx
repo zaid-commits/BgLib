@@ -1,9 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from './pages/BackgroundLibrary';
 import './App.css';
 import { AcceptCookies } from './components/AcceptCookies';
 import ComponentLibrary from './pages/ComponentLibrary';
-import ComponentHome from '@/components/Library/ComponentHome';
 import ButtonsPage from '@/components/Library/ButtonsPage';
 import FormsPage from '@/components/Library/FormsPage';
 import CardsPage from '@/components/Library/CardsPage';
