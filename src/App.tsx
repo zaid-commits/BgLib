@@ -9,16 +9,17 @@ import FormsPage from '@/components/Library/FormsPage';
 import CardsPage from '@/components/Library/CardsPage';
 import 'prismjs/themes/prism-tomorrow.css';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
+import BackgroundLibrary from './pages/BackgroundLibrary';
 
 function App() {
   return (
     <Router>
       <div>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/backgrounds" element={<HomePage />} />
+          <Route path="/" element={<BackgroundLibrary />} />
+          <Route path="/backgrounds" element={<BackgroundLibrary />} />
           <Route path="/components" element={<ComponentLibrary />}>
-            <Route index element={<ComponentHome />} />
+            {/* <Route index element={<ComponentHome />} /> */}
             <Route path="buttons" element={<ButtonsPage />} />
             <Route path="forms" element={<FormsPage />} />
             <Route path="cards" element={<CardsPage />} />
