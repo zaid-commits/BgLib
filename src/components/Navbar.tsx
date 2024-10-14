@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
               <FiSearch className="absolute right-3 top-2.5 text-gray-400" />
             </div>
             <a
-              href="https://github.com/yourusername/your-repo"
+              href="https://github.com/zaid-commits/bglib"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-gray-600 hover:text-indigo-600 transition-colors duration-200"
