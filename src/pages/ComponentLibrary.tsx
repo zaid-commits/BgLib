@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link, Outlet, useLocation } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link, Outlet, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
 
 const ComponentLibrary: React.FC = () => {
@@ -40,13 +40,19 @@ const ComponentLibrary: React.FC = () => {
         className="md:hidden p-4 bg-indigo-600 text-white"
         onClick={() => setIsSidebarOpen(!isSidebarOpen)}
       >
-        {isSidebarOpen ? 'Close Menu' : 'Open Menu'}
+        {isSidebarOpen ? "Close Menu" : "Open Menu"}
       </button>
-      <aside className={`w-full md:w-64 border-b md:border-b-0 md:border-r border-gray-300 p-4 bg-white shadow-md transition-transform transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0`}>
+      <aside
+        className={`w-full md:w-64 border-b md:border-b-0 md:border-r border-gray-300 p-4 bg-white shadow-md transition-transform transform ${
+          isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+        } md:translate-x-0`}
+      >
         <h1 className="text-2xl px-2 font-bold mb-4 text-black">Components</h1>
         {categories.map((category, index) => (
           <div key={category.category} className="mb-6">
-            <h2 className="text-lg px-2 font-semibold text-black mb-2">{category.category}</h2>
+            <h2 className="text-lg px-2 font-semibold text-black mb-2">
+              {category.category}
+            </h2>
             <nav className="space-y-1">
               {category.items.map((item) => (
                 <Link
@@ -63,7 +69,9 @@ const ComponentLibrary: React.FC = () => {
                 </Link>
               ))}
             </nav>
-            {index < categories.length - 1 && <hr className="my-4 border-gray-300" />}
+            {index < categories.length - 1 && (
+              <hr className="my-4 border-gray-300" />
+            )}
           </div>
         ))}
         <hr className="my-6 border-gray-300" />
@@ -76,7 +84,11 @@ const ComponentLibrary: React.FC = () => {
           </Link>
         </div>
       </aside>
-      <main className={`flex-1 p-4 md:p-8 bg-white shadow-lg rounded-lg transition-all ${isSidebarOpen ? 'mt-0' : 'mt-0 md:mt-0'}`}>
+      <main
+        className={`flex-1 p-4 md:p-8 bg-white shadow-lg rounded-lg transition-all ${
+          isSidebarOpen ? "mt-0" : "mt-0 md:mt-0"
+        }`}
+      >
         <Outlet />
       </main>
     </div>
