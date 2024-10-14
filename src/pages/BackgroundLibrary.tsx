@@ -1,10 +1,8 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { HeroSection } from "@/components/HeroSection";
 import { SearchBar } from "@/components/SearchBar";
 import { BackgroundCard } from "@/components/BackgroundCard";
 import { AcceptCookies } from "@/components/AcceptCookies";
-import { Button } from "@/components/ui/button";
 import '../App.css'
 import { Footer } from "@/components/Footer";
 const gradients = [
@@ -73,11 +71,8 @@ export default function HomePage() {
         <main>
           <HeroSection onResetBackground={handleResetBackground} />
           <section className="py-8 px-4">
-            <div className="flex justify-between items-center mb-8">
-              <h2 className="text-3xl font-bold">Explore Backgrounds</h2>
-              <Link to="/components">
-                <Button variant="outline">Component Library</Button>
-              </Link>
+            <div className="flex justify-center items-center mb-8">
+             <h2 className="text-3xl font-bold">Explore Backgrounds</h2> 
             </div>
             <SearchBar />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
