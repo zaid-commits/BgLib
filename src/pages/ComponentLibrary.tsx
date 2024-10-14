@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import { cn } from "@/lib/utils";
 
 const ComponentLibrary: React.FC = () => {
   const location = useLocation();
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const categories = [
     {
@@ -34,8 +35,14 @@ const ComponentLibrary: React.FC = () => {
   ];
 
   return (
-    <div className="flex min-h-screen bg-gradient-to-r from-gray-50 to-gray-200 text-gray-900">
-      <aside className="w-64 border-r border-gray-300 p-4 bg-white shadow-md">
+    <div className="flex flex-col md:flex-row min-h-screen bg-gradient-to-r from-gray-50 to-gray-200 text-gray-900">
+      <button
+        className="md:hidden p-4 bg-indigo-600 text-white"
+        onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+      >
+        {isSidebarOpen ? 'Close Menu' : 'Open Menu'}
+      </button>
+      <aside className={`w-full md:w-64 border-b md:border-b-0 md:border-r border-gray-300 p-4 bg-white shadow-md transition-transform transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0`}>
         <h1 className="text-2xl px-2 font-bold mb-4 text-black">Components</h1>
         {categories.map((category, index) => (
           <div key={category.category} className="mb-6">
@@ -69,7 +76,7 @@ const ComponentLibrary: React.FC = () => {
           </Link>
         </div>
       </aside>
-      <main className="flex-1 p-8 bg-white shadow-lg rounded-lg">
+      <main className={`flex-1 p-4 md:p-8 bg-white shadow-lg rounded-lg transition-all ${isSidebarOpen ? 'mt-0' : 'mt-0 md:mt-0'}`}>
         <Outlet />
       </main>
     </div>
