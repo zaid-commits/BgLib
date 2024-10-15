@@ -1,15 +1,64 @@
 import React from 'react';
-import { ArrowRight, Github, Heart, Trash2, Settings, Mail, Code, Copy} from "lucide-react";
+import { Github, Heart, Trash2, Settings, Mail, Code, Copy } from "lucide-react";
 import { Link } from 'react-router-dom';
+import { ChitchatButton } from './CustomButtons';
+import { Test } from './CustomButtons';
 
 const ButtonsPage: React.FC = () => {
   const buttonVariants = [
-    { variant: "Primary", icon: <Mail />, label: "Email", className: "bg-blue-500 text-white hover:bg-blue-600" },
-    { variant: "Secondary", icon: <Heart />, label: "Like", className: "bg-gray-200 text-gray-800 hover:bg-gray-300" },
-    { variant: "Outline", icon: <Github />, label: "GitHub", className: "border-2 border-gray-300 text-gray-800 hover:bg-gray-100" },
-    { variant: "Ghost", icon: <Trash2 />, label: "Delete", className: "text-gray-600 hover:bg-gray-100" },
-    { variant: "Gradient", icon: <Settings />, label: "Settings", className: "bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600" },
-    { variant: "Icon", icon: <ArrowRight />, label: "", className: "bg-green-500 text-white hover:bg-green-600 rounded-full p-2" },
+    { 
+      variant: "Primary", 
+      component: (
+        <button className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-all duration-200 flex items-center">
+          <Mail className="mr-2 h-4 w-4" />
+          Email
+        </button>
+      )
+    },
+    { 
+      variant: "Secondary", 
+      component: (
+        <button className="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition-all duration-200 flex items-center">
+          <Heart className="mr-2 h-4 w-4" />
+          Like
+        </button>
+      )
+    },
+    { 
+      variant: "Outline", 
+      component: (
+        <button className="px-4 py-2 border-2 border-gray-300 text-gray-800 rounded-md hover:bg-gray-100 transition-all duration-200 flex items-center">
+          <Github className="mr-2 h-4 w-4" />
+          GitHub
+        </button>
+      )
+    },
+    { 
+      variant: "Ghost", 
+      component: (
+        <button className="px-4 py-2 text-gray-600 rounded-md hover:bg-gray-100 transition-all duration-200 flex items-center">
+          <Trash2 className="mr-2 h-4 w-4" />
+          Delete
+        </button>
+      )
+    },
+    { 
+      variant: "Gradient", 
+      component: (
+        <button className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-md hover:from-purple-600 hover:to-pink-600 transition-all duration-200 flex items-center">
+          <Settings className="mr-2 h-4 w-4" />
+          Settings
+        </button>
+      )
+    },
+    { 
+      variant: "Custom", 
+      component: <ChitchatButton label="Chitchat" />
+    },
+    {
+      variant: "Test",
+      component: <Test />
+    }
   ];
 
   return (
@@ -31,10 +80,7 @@ const ButtonsPage: React.FC = () => {
                   </span>
                 </div>
                 <div className="flex-grow flex items-center justify-center bg-gray-50 rounded-lg p-6 mb-6">
-                  <button className={`px-4 py-2 rounded-md flex items-center justify-center transition-all duration-200 ${button.className}`}>
-                    {button.icon && React.cloneElement(button.icon, { className: button.label ? "mr-2 h-4 w-4" : "h-5 w-5" })}
-                    {button.label}
-                  </button>
+                  {button.component}
                 </div>
                 <div className="flex justify-between items-center pt-4 border-t border-gray-100">
                   <button className="text-sm text-gray-600 flex items-center hover:text-blue-500 transition-colors duration-200">
