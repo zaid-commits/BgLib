@@ -68,7 +68,7 @@ export default function HomePage() {
   };
 
   useEffect(() => {
-    document.body.style.color = isDarkBackground ? 'white' : 'initial';
+    document.body.style.color = isDarkBackground ? '#e0e0e0' : 'initial';
     return () => {
       document.body.style.color = 'initial';
     };
@@ -84,7 +84,7 @@ export default function HomePage() {
           backgroundGradient ? "bg-opacity-0" : "bg-white"
         }`}
       >
-        <main className={isDarkBackground ? 'text-white' : ''}>
+        <main className={isDarkBackground ? 'text-[#e0e0e0]' : ''}>
           <HeroSection onResetBackground={handleResetBackground} />
           <section className="py-12 px-6">
             <div className="flex justify-center items-center mb-10">
