@@ -45,7 +45,8 @@ const ComponentLibrary: React.FC = () => {
       <aside
         className={`w-full md:w-64 border-b md:border-b-0 md:border-r border-gray-300 p-4 bg-white shadow-md transition-transform transform ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-        } md:translate-x-0`}
+        } md:translate-x-0 fixed md:relative h-full overflow-y-auto`}
+        style={{ height: "100vh" }}
       >
         <h1 className="text-2xl px-2 font-bold mb-4 text-black">Components</h1>
         {categories.map((category, index) => (
@@ -85,9 +86,8 @@ const ComponentLibrary: React.FC = () => {
         </div>
       </aside>
       <main
-        className={`flex-1 p-4 md:p-8 bg-white shadow-lg rounded-lg transition-all ${
-          isSidebarOpen ? "mt-0" : "mt-0 md:mt-0"
-        }`}
+        className={`flex-1 p-4 md:p-8 bg-white shadow-lg rounded-lg transition-all overflow-y-auto`}
+        style={{ height: "100vh" }}
       >
         <Outlet />
       </main>
