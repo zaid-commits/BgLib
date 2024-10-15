@@ -31,10 +31,10 @@ const NotFoundPage: React.FC = () => {
         Oops! The page you are looking for does not exist.
       </p>
       <Link
-        to="/"
+        to="/components"
         className="px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition-colors"
       >
-        Go to Home Page
+        Go to Components Page
       </Link>
     </div>
   );
