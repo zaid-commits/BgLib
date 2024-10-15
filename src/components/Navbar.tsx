@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FiMenu, FiX, FiSearch, FiGithub } from 'react-icons/fi';
+import { FiMenu, FiX, FiSearch, FiGithub, FiMoon } from 'react-icons/fi';
 import { motion } from 'framer-motion';
 
 const Navbar: React.FC = () => {
@@ -62,6 +62,12 @@ const Navbar: React.FC = () => {
             >
               <FiGithub className="w-5 h-5" />
             </a>
+            <button
+              className="p-2 text-gray-600 hover:text-indigo-600 transition-colors duration-200"
+              aria-label="Toggle theme"
+            >
+              <FiMoon className="w-5 h-5" />
+            </button>
           </div>
           <div className="md:hidden flex items-center">
             <button
@@ -113,6 +119,13 @@ const Navbar: React.FC = () => {
               <FiGithub className="mr-3 h-5 w-5" />
               GitHub
             </a>
+            <button
+              className="flex items-center w-full px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+              onClick={toggleMenu}
+            >
+              <FiMoon className="mr-3 h-5 w-5" />
+              Toggle Theme
+            </button>
           </div>
         </div>
       </motion.div>
