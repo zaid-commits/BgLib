@@ -13,7 +13,6 @@ const Navbar: React.FC = () => {
 
   const menuItems = [
     { name: 'Home', path: '/' },
-    { name: 'Backgrounds', path: '/backgrounds' },
     { name: 'Components', path: '/components' },
     { name: 'About', path: '/about' }, 
   ];
