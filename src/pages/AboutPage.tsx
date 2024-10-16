@@ -50,12 +50,12 @@ const AboutPage: React.FC = () => {
           <CardContent>
             <div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6">
               <Avatar className="h-32 w-32">
-                <AvatarImage src="https://github.com/shadcn.png" alt="Developer" />
+                <AvatarImage src="https://github.com/zaid-commits.png" alt="Developer" />
                 <AvatarFallback>JD</AvatarFallback>
               </Avatar>
               <div>
-                <h3 className="text-2xl font-semibold">John Doe</h3>
-                <p className="text-sm text-gray-600 mb-2">Visionary Full-stack Developer & Design Enthusiast</p>
+                <h3 className="text-2xl font-semibold">OgZed</h3>
+                <p className="text-sm text-gray-600 mb-2">Almost a full stack developer, always learning new things.</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <Badge variant="secondary">React</Badge>
                   <Badge variant="secondary">TypeScript</Badge>
@@ -65,15 +65,21 @@ const AboutPage: React.FC = () => {
                   With over a decade of experience in web development, John has been at the forefront of creating intuitive and beautiful user interfaces. His passion for design and functionality led to the creation of BgLib, aiming to bridge the gap between developers and designers.
                 </p>
                 <div className="flex space-x-4">
-                  <Button variant="outline" size="icon">
-                    <FaGithub className="h-4 w-4" />
-                  </Button>
-                  <Button variant="outline" size="icon">
-                    <FaTwitter className="h-4 w-4" />
-                  </Button>
-                  <Button variant="outline" size="icon">
-                    <FaLinkedin className="h-4 w-4" />
-                  </Button>
+                  <a href="https://github.com/zaid-commits" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" size="icon">
+                      <FaGithub className="h-4 w-4" />
+                    </Button>
+                  </a>
+                  <a href="https://twitter.com/zaid_suiii" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" size="icon">
+                      <FaTwitter className="h-4 w-4" />
+                    </Button>
+                  </a>
+                  <a href="https://www.linkedin.com/in/zaid-rakhange-1523bb318/" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" size="icon">
+                      <FaLinkedin className="h-4 w-4" />
+                    </Button>
+                  </a>
                 </div>
               </div>
             </div>
