@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import BackgroundLibrary from './pages/BackgroundLibrary';
 import AboutPage from './pages/AboutPage';
-import NotFoundPage from './components/Library/404';
+import NotFoundPage from './components/Library/404.tsx';
 import { FiGithub, FiTwitter } from 'react-icons/fi'; 
 import 'prismjs/themes/prism-tomorrow.css';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
