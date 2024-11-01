@@ -21,7 +21,7 @@ function App() {
               <FiGithub className="w-5 h-5" />
             </a>
             <a
-              href="https://twitter.com/zaidcommits"
+              href="https://twitter.com/zaidsuiii"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-gray-600 hover:text-indigo-600 transition-colors duration-200"
