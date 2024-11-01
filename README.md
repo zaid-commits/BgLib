@@ -2,7 +2,8 @@
 
 Welcome to the BgLib
 
-![image](https://github.com/user-attachments/assets/75779f39-c7bf-4d29-b0fc-3efeb369a435)
+![image](https://github.com/user-attachments/assets/9e30f323-fc35-48d7-88b5-cffb7813c3f6)
+
 
 ## Introduction
 BgLib is an opensource background library inspired by bg.ibelick just because the bg.ibelick stopped the support and updating the library. this library is built on top of bg.ibelick library with all the concepts taken from them. no source code is being stolen from there as this library is fully built from scratch
