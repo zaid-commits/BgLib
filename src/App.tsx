@@ -5,6 +5,7 @@ import NotFoundPage from './components/Library/404';
 import { FiGithub, FiTwitter } from 'react-icons/fi';
 import 'prismjs/themes/prism-tomorrow.css';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </div>
+        <Analytics />
       </div>
     </Router>
   );
