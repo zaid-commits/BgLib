@@ -73,16 +73,6 @@ const gradients = [
       isDark: true,
     },
     {
-      title: "Charcoal Grid",
-      code: `background-color: #1b1b1b;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px), 
-  linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px); 
-  background-size: 16px 16px;`,
-      gradient: `linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px), 
-  linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px)`,
-      isDark: true,
-    },
-    {
       title: "Aqua Mist",
       code: `background: radial-gradient(ellipse 80% 80% at 50% -25%, rgba(76, 201, 255, 0.3), rgba(0, 0, 0, 0)), #0b0d11;`,
       gradient: "radial-gradient(ellipse 80% 80% at 50% -25%, rgba(76, 201, 255, 0.3), rgba(0, 0, 0, 0)), #0b0d11",
