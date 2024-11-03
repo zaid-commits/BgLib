@@ -91,6 +91,42 @@ background-size: 16px 16px;`,
 linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px)`,
     isDark: true,
   },
+  {
+    title: "Aqua Mist",
+    code: `background: radial-gradient(ellipse 80% 80% at 50% -25%, rgba(76, 201, 255, 0.3), rgba(0, 0, 0, 0)), #0b0d11;`,
+    gradient: "radial-gradient(ellipse 80% 80% at 50% -25%, rgba(76, 201, 255, 0.3), rgba(0, 0, 0, 0)), #0b0d11",
+    isDark: true,
+  },
+  {
+    title: "Amber Glow",
+    code: `background: radial-gradient(ellipse 85% 85% at 50% -20%, rgba(255, 153, 51, 0.25), rgba(0, 0, 0, 0)), #1a1a1d;`,
+    gradient: "radial-gradient(ellipse 85% 85% at 50% -20%, rgba(255, 153, 51, 0.25), rgba(0, 0, 0, 0)), #1a1a1d",
+    isDark: true,
+  },
+  {
+    title: "Emerald Dawn",
+    code: `background: radial-gradient(ellipse 90% 90% at 50% -35%, rgba(0, 255, 136, 0.2), rgba(0, 0, 0, 0)), #141414;`,
+    gradient: "radial-gradient(ellipse 90% 90% at 50% -35%, rgba(0, 255, 136, 0.2), rgba(0, 0, 0, 0)), #141414",
+    isDark: true,
+  },
+  {
+    title: "Lavender Twilight",
+    code: `background: radial-gradient(ellipse 80% 80% at 50% -15%, rgba(175, 134, 222, 0.2), rgba(0, 0, 0, 0)), #121212;`,
+    gradient: "radial-gradient(ellipse 80% 80% at 50% -15%, rgba(175, 134, 222, 0.2), rgba(0, 0, 0, 0)), #121212",
+    isDark: true,
+  },
+  {
+    title: "Mint Glow",
+    code: `background: radial-gradient(ellipse 85% 85% at 50% -10%, rgba(0, 255, 191, 0.3), rgba(0, 0, 0, 0)), #0e0e0e;`,
+    gradient: "radial-gradient(ellipse 85% 85% at 50% -10%, rgba(0, 255, 191, 0.3), rgba(0, 0, 0, 0)), #0e0e0e",
+    isDark: true,
+  },
+  {
+    title: "Crimson Shadow",
+    code: `background: radial-gradient(ellipse 85% 85% at 50% -25%, rgba(255, 85, 85, 0.3), rgba(0, 0, 0, 0)), #111;`,
+    gradient: "radial-gradient(ellipse 85% 85% at 50% -25%, rgba(255, 85, 85, 0.3), rgba(0, 0, 0, 0)), #111",
+    isDark: true,
+  },
 ];
 
 export default function HomePage() {
