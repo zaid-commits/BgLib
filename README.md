@@ -1,4 +1,4 @@
-# BgLib: Elevate Your Project with Stunning Gradients
+a# BgLib: Elevate Your Project with Stunning Gradients
 
 BgLib is an open-source background library that brings a touch of elegance to your projects. Inspired by [bg.ibelick](https://bg.ibelick.com), it offers a diverse collection of gradients that can be seamlessly integrated into your next project.
 
@@ -39,9 +39,8 @@ Take a look at some of the stunning gradients available:
 
 ## Contributing to BgLib
 
-We welcome contributions to BgLib! If you have a new gradient idea or would like to enhance an existing one, please submit a pull request.
+We welcome contributions to BgLib! If you have a new gradient idea or would like to enhance an existing one, please submit a pull request. For more information on contributing, please refer to our [Contributing Guidelines](CONTRIBUTING.md).
 
 ## Licensing Information
 
 BgLib is licensed under the MIT License, ensuring that it remains open-source and accessible to everyone.
-
