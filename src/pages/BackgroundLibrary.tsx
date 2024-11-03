@@ -6,7 +6,6 @@ import { AcceptCookies } from "@/components/AcceptCookies";
 import '../App.css';
 import { Footer } from "@/components/Footer";
 import toast, { Toaster } from 'react-hot-toast';
-// import 'react-hot-toast/dist/style.css';
 
 const gradients = [
   {

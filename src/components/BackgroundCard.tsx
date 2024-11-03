@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Copy, Check } from 'lucide-react'
+import toast from 'react-hot-toast'
 
 interface BackgroundCardProps {
   title: string
@@ -16,6 +17,7 @@ export const BackgroundCard: React.FC<BackgroundCardProps> = ({ title, code, gra
   const handleCopy = () => {
     navigator.clipboard.writeText(code)
     setCopied(true)
+    toast.success('Code copied to clipboard!')
     setTimeout(() => setCopied(false), 2000)
   }
 
