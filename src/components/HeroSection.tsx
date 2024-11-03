@@ -1,31 +1,35 @@
-import { useState, useEffect, useRef } from 'react'
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Copy, Check } from 'lucide-react'
-import gsap from 'gsap'
+import { useState, useEffect, useRef } from "react";
+import { Button } from "./ui/button";
+import { Card } from "./ui/card";
+import { CardContent } from "./ui/card";
+import { Copy, Check } from 'lucide-react';
+import gsap from 'gsap';
 
 interface HeroSectionProps {
   onResetBackground: () => void;
 }
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ onResetBackground }) => {
-  const [copied, setCopied] = useState(false)
-  const sectionRef = useRef<HTMLElement>(null)
+  const [copied, setCopied] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     if (sectionRef.current) {
-      gsap.fromTo(sectionRef.current, { opacity: 0 }, { opacity: 1, duration: 1 })
+      gsap.fromTo(sectionRef.current, { opacity: 0 }, { opacity: 1, duration: 1 });
     }
-  }, [])
+  }, []);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('npm install bg-lib')
-    setCopied(true)
-    setTimeout(() => setCopied(false), 2000)
-  }
+    navigator.clipboard.writeText('npm install bg-lib');
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   return (
-    <section ref={sectionRef} className="py-20 px-4 text-center">
+    <section ref={sectionRef} className="py-20 px-4 text-center relative">
+      <a href="https://www.producthunt.com/posts/bglib?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-bglib" target="_blank" className="absolute top-5 left-4">
+        <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=571509&theme=dark" alt="BgLib - Background library for your next product! | Product Hunt" style={{ width: '220px', height: '48px' }} width="220" height="48" />
+      </a>
       <h1 className="text-4xl sm:text-5xl md:text-6xl mt-14 font-bold mb-6 max-w-4xl mx-auto">
         Background Library Crafted Just for You!
       </h1>
@@ -34,10 +38,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onResetBackground }) =
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
         <Button variant="default" className="bg-black text-white hover:bg-gray-800">
-          <a href="https://github.com/zaid-commits/bgLib">Star on Github ⭐</a> 
+          <a href="https://github.com/zaid-commits/bgLib">Star on Github ⭐</a>
         </Button>
-        <Button 
-          variant="outline" 
+        <Button
+          variant="outline"
           className="text-black border-black hover:bg-gray-100"
           onClick={onResetBackground}
         >
@@ -55,5 +59,5 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onResetBackground }) =
         </CardContent>
       </Card>
     </section>
-  )
-}
+  );
+};
