@@ -20,7 +20,7 @@ export const BackgroundCard: React.FC<BackgroundCardProps> = ({ title, code, gra
   }
 
   return (
-    <Card className="overflow-hidden">
+    <Card className="overflow-hidden cursor-pointer" onClick={() => onTryGradient(gradient)}>
       <div className="h-40" style={{ background: gradient }}></div>
       <CardContent className="p-4">
         <h3 className="text-lg font-semibold mb-2">{title}</h3>
@@ -39,9 +39,6 @@ export const BackgroundCard: React.FC<BackgroundCardProps> = ({ title, code, gra
               Copy code
             </>
           )}
-        </Button>
-        <Button onClick={() => onTryGradient(gradient)} variant="default" className="flex-1 ml-2">
-          Try Gradient
         </Button>
       </CardFooter>
     </Card>
