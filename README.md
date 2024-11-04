@@ -43,4 +43,4 @@ We welcome contributions to BgLib! If you have a new gradient idea or would like
 
 ## Licensing Information
 
-BgLib is licensed under the MIT License, ensuring that it remains open-source and accessible to everyone.
+BgLib is licensed under the MIT License, ensuring that it remains open-source and accessible to everyone. For more details, please refer to the [LICENSE](LICENSE) file.
