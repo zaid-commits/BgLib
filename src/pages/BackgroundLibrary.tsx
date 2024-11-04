@@ -8,10 +8,10 @@ import { Footer } from "@/components/Footer";
 import toast, { Toaster } from 'react-hot-toast';
 import gradients from "@/data/gradients";
 
-
 export default function HomePage() {
-  const [backgroundGradient, setBackgroundGradient] = useState("");
-  const [isDarkBackground, setIsDarkBackground] = useState(false);
+  // Set the default background gradient here
+  const [backgroundGradient, setBackgroundGradient] = useState("radial-gradient(ellipse 85% 85% at 50% -25%, rgba(255, 85, 85, 0.3), rgba(0, 0, 0, 0)), #111");
+  const [isDarkBackground, setIsDarkBackground] = useState(true); // Adjusted for the default
 
   const handleTryGradient = (gradient: string, isDark: boolean) => {
     setBackgroundGradient(gradient);
@@ -23,8 +23,8 @@ export default function HomePage() {
   };
 
   const handleResetBackground = () => {
-    setBackgroundGradient("");
-    setIsDarkBackground(false);
+    setBackgroundGradient("radial-gradient(ellipse 85% 85% at 50% -25%, rgba(255, 85, 85, 0.3), rgba(0, 0, 0, 0)), #111"); // Reset to default
+    setIsDarkBackground(true); // Adjust for the default
     toast.success('Background reset successfully!', {
       position: 'top-center',
       duration: 2000,
@@ -43,9 +43,7 @@ export default function HomePage() {
       className="hero-section min-h-screen flex flex-col transition-all duration-300"
       style={{ background: backgroundGradient }}
     >
-      <div
-        className={`flex-grow ${backgroundGradient ? "bg-opacity-0" : "bg-white"}`}
-      >
+      <div className={`flex-grow ${backgroundGradient ? "bg-opacity-0" : "bg-white"}`}>
         <main className={isDarkBackground ? 'text-[#e0e0e0]' : ''}>
           <HeroSection onResetBackground={handleResetBackground} />
           <section className="py-12 px-6">
