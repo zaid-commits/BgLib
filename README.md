@@ -1,6 +1,6 @@
 # BgLib: Elevate Your Project with Stunning Gradients
 
-BgLib is an open-source background library that brings a touch of elegance to your projects. Inspired by [bg.ibelick](https://bg.ibelick.com), it offers a diverse collection of gradients that can be seamlessly integrated into your next project.
+BgLib is an open-source background library that brings a touch of elegance to your projects. It offers a diverse collection of gradients that can be seamlessly integrated into your next project.
 
 ## Key Features
 
