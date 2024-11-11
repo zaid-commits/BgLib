@@ -29,7 +29,7 @@ Take a look at some of the stunning gradients available:
 * Emerald Dawn
 * Lavender Twilight
 * Mint Glow
-* Crimson Shadow
+
 
 ## Getting Started with BgLib
 
