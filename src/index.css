@@ -115,3 +115,27 @@ html{
   scroll-behavior: smooth; 
   overscroll-behavior: none;
 }
+
+
+.custom-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px; 
+  height: 5px; 
+  background: linear-gradient(90deg, #ff7e5f, #feb47b); 
+  border-radius: 3px; 
+  z-index: -1; 
+  transform: rotate(-2deg); 
+  transition: transform 0.3s ease-in-out; 
+}
+
+.custom-underline:hover::after {
+  transform: rotate(0deg); /* Reset rotation on hover */
+}

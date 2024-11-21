@@ -4,6 +4,7 @@ import { Card } from "./ui/card";
 import { CardContent } from "./ui/card";
 import { Copy, Check } from 'lucide-react';
 import gsap from 'gsap';
+import '../index.css';
 
 interface HeroSectionProps {
   onResetBackground: () => void;
@@ -31,8 +32,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onResetBackground }) =
         <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=571509&theme=dark" alt="BgLib - Background library for your next product! | Product Hunt" style={{ width: '220px', height: '48px' }} width="220" height="48" />
       </a>
       <h1 className="text-4xl sm:text-5xl md:text-6xl mt-14 font-bold mb-6 max-w-4xl mx-auto">
-        Background Library Crafted Just for You!
-      </h1>
+  Background Library <span className="custom-underline">Crafted</span> Just for You!
+</h1>
+
       <p className="text-zinc-400 max-w-2xl mx-auto mb-10">
         Open source background library for your next project. Just copy the CSS code and paste it in your project. It's that <span className="text-blue-500">simple!</span>
       </p>
