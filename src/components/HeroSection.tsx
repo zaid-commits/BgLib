@@ -16,7 +16,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onResetBackground }) =
 
   useEffect(() => {
     if (sectionRef.current) {
-      gsap.fromTo(sectionRef.current, { opacity: 0 }, { opacity: 1, duration: 1 });
+      gsap.fromTo(sectionRef.current, { opacity: 0 }, { opacity: 1, disdisduration: 1 });
     }
   }, []);
 
