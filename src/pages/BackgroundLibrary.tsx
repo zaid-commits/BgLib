@@ -9,9 +9,8 @@ import toast, { Toaster } from 'react-hot-toast';
 import gradients from "@/data/gradients";
 
 export default function HomePage() {
-  // Set the default background gradient here
   const [backgroundGradient, setBackgroundGradient] = useState("radial-gradient(ellipse 85% 85% at 50% -25%, rgba(255, 85, 85, 0.3), rgba(0, 0, 0, 0)), #111");
-  const [isDarkBackground, setIsDarkBackground] = useState(true); // Adjusted for the default
+  const [isDarkBackground, setIsDarkBackground] = useState(true); 
 
   const handleTryGradient = (gradient: string, isDark: boolean) => {
     setBackgroundGradient(gradient);
@@ -23,8 +22,8 @@ export default function HomePage() {
   };
 
   const handleResetBackground = () => {
-    setBackgroundGradient("radial-gradient(ellipse 85% 85% at 50% -25%, rgba(255, 85, 85, 0.3), rgba(0, 0, 0, 0)), #111"); // Reset to default
-    setIsDarkBackground(true); // Adjust for the default
+    setBackgroundGradient("radial-gradient(ellipse 85% 85% at 50% -25%, rgba(255, 85, 85, 0.3), rgba(0, 0, 0, 0)), #111"); 
+    setIsDarkBackground(true); 
     toast.success('Background reset successfully!', {
       position: 'top-center',
       duration: 2000,

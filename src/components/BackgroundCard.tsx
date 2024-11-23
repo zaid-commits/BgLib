@@ -15,11 +15,9 @@ export const BackgroundCard: React.FC<BackgroundCardProps> = ({ title, code, gra
   const [copied, setCopied] = useState(false);
   const [liked, setLiked] = useState(false);
   
-  // Use the title or a unique identifier as the key for local storage
   const storageKey = `favorite-${title}`;
 
   useEffect(() => {
-    // Check local storage to see if this gradient is favorited
     const isFavorited = localStorage.getItem(storageKey) === 'true';
     setLiked(isFavorited);
   }, [storageKey]);
@@ -34,7 +32,7 @@ export const BackgroundCard: React.FC<BackgroundCardProps> = ({ title, code, gra
   const toggleLike = () => {
     const newLikedStatus = !liked;
     setLiked(newLikedStatus);
-    localStorage.setItem(storageKey, JSON.stringify(newLikedStatus)); // Update local storage
+    localStorage.setItem(storageKey, JSON.stringify(newLikedStatus)); 
     toast.success(newLikedStatus ? 'Added to favorites!' : 'Removed from favorites!');
   };
 
