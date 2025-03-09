@@ -9,6 +9,14 @@ import toast, { Toaster } from 'react-hot-toast';
 import gradients from "@/data/gradients";
 
 export default function HomePage() {
+  // Filter gradients based on search query
+  const [searchQuery, setSearchQuery] = useState("");
+  const filteredGradients = gradients.filter(
+    (grad) =>
+      grad.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      grad.code.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   const [backgroundGradient, setBackgroundGradient] = useState("radial-gradient(ellipse 85% 85% at 50% -25%, rgba(255, 85, 85, 0.3), rgba(0, 0, 0, 0)), #111");
   const [isDarkBackground, setIsDarkBackground] = useState(true); 
 
@@ -49,9 +57,10 @@ export default function HomePage() {
             <div className="flex justify-center items-center mb-10">
               <h2 className="text-4xl font-bold">Explore Backgrounds</h2>
             </div>
-            <SearchBar />
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mt-10">
-              {gradients.map((grad, index) => (
+            <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+            {
+              filteredGradients.length > 0 ?   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mt-10">
+                {filteredGradients?.map((grad, index) => (
                 <BackgroundCard
                   key={index}
                   title={grad.title}
@@ -59,8 +68,11 @@ export default function HomePage() {
                   gradient={grad.gradient}
                   onTryGradient={() => handleTryGradient(grad.gradient, grad.isDark)}
                 />
-              ))}
-            </div>
+              )) }
+              </div> : 
+              <div className="flex relative items-center justify-center my-10 ">
+              No background found matching your search <span className="pl-1 text-blue-500"> "{searchQuery}"</span>
+            </div>}
             <div className="py-10">
               <Footer />
             </div>
